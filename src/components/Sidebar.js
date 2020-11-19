@@ -3,20 +3,22 @@ import React from "react";
 import SidebarOption from "./SidebarOption";
 
 import "../css/Sidebar.css";
-import TwitterIcon from "@material-ui/icons/Twitter";
-import HomeIcon from "@material-ui/icons/Home";
-import SearchIcon from "@material-ui/icons/Search";
-import NotificationsNoneIcon from "@material-ui/icons/NotificationsNone";
+import icons from "../icons";
 
 const Sidebar = () => {
   return (
     <div>
       <div className="sidebar">
-        <TwitterIcon />
+        <icons.twitter />
 
-        <SidebarOption Icon={HomeIcon} text="Home" />
-        <SidebarOption Icon={SearchIcon} text="Explore" />
-        <SidebarOption Icon={NotificationsNoneIcon} text="Notifications" />
+        <SidebarOption Icon={icons.home} text="Home" />
+        <SidebarOption Icon={icons.search} text="Explore" />
+        <SidebarOption Icon={icons.notifications} text="Notifications" />
+        <SidebarOption Icon={icons.mail} text="Mail" />
+        <SidebarOption Icon={icons.bookmark} text="Notifications" />
+        <SidebarOption Icon={icons.list} text="List" />
+        <SidebarOption Icon={icons.identity} text="Notifications" />
+        <SidebarOption Icon={icons.more} text="Notifications" />
       </div>
     </div>
   );
