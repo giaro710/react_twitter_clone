@@ -6,9 +6,14 @@ const Tweetbox = () => {
   return (
     <div className="tweetbox">
       <form>
-        <div className="tweetbox__input">
+        <div className="tweetbox__input-container">
           <Avatar src="https://images.unsplash.com/photo-1468011749792-10026eb12caf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" />
-          <input type="text" placeholder="What's happening?" />
+          <input
+            type="text"
+            placeholder="What's happening?"
+            className="tweetbox__input"
+          />
+          {/* <input type="text" placeholder="Enter an image url" /> */}
         </div>
         <Button>Tweet</Button>
       </form>
