@@ -20,10 +20,8 @@ const Post = ({
         <div className="post__header">
           <div className="post__headerText">
             <h3>
-              Simone Gluck{" "}
-              <span>
-                <icons.verified className="post__badge" />
-              </span>
+              Simone Glück <icons.verified className="post__badge" />
+              <span className="post__header--username">@glück_für_alles</span>
             </h3>
           </div>
 
@@ -34,13 +32,14 @@ const Post = ({
         <img
           src="https://tiragraffi.it/wp-content/uploads/2016/02/Taco_Party_2.gif"
           alt="post image"
+          className="post__body--image"
         />
-      </div>
-      <div className="post__footer">
-        <icons.chat fontSize="small" />
-        <icons.repeat fontSize="small" />
-        <icons.like fontSize="small" />
-        <icons.publish fontSize="small" />
+        <div className="post__footer">
+          <icons.chat fontSize="small" />
+          <icons.repeat fontSize="small" />
+          <icons.like fontSize="small" />
+          <icons.publish fontSize="small" />
+        </div>
       </div>
     </div>
   );
