@@ -1,0 +1,16 @@
+/* .sidebar {
+  text-align: center;
+} */
+
+.sidebar__twitter-icon:hover {
+  background: #142e43;
+  border-radius: 50%;
+}
+
+.sidebar__tweet {
+  background: var(--twitter-color) !important;
+  border: none !important;
+  color: #fff !important;
+  font-weight: 900 !important;
+  text-transform: inherit !important;
+}
