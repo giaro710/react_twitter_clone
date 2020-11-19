@@ -20,3 +20,22 @@
   font-size: 20px;
   border: none;
 }
+
+.tweetbox__input--image {
+  border: none;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  outline: none;
+}
+
+.tweetbox__tweet-btn {
+  background: var(--twitter-color) !important;
+  border: none !important;
+  color: #fff !important;
+  font-weight: 900 !important;
+  text-transform: inherit !important;
+  border-radius: 30px !important;
+  transition: background 20ms;
+  margin-left: auto !important;
+}
