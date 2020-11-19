@@ -7,6 +7,13 @@ import BookmarkBorderIcon from "@material-ui/icons/BookmarkBorder";
 import ListAltIcon from "@material-ui/icons/ListAlt";
 import PermIdentityIcon from "@material-ui/icons/PermIdentity";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
+import VerifiedUserIcon from "@material-ui/icons/VerifiedUser";
+import ChatBubbleOutlineIcon from "@material-ui/icons/ChatBubbleOutline";
+import RepeatIcon from "@material-ui/icons/Repeat";
+import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
+import PublishIcon from "@material-ui/icons/Publish";
+
+import { Avatar } from "@material-ui/core";
 
 const icons = {
   twitter: TwitterIcon,
@@ -18,6 +25,12 @@ const icons = {
   list: ListAltIcon,
   profile: PermIdentityIcon,
   more: MoreHorizIcon,
+  verified: VerifiedUserIcon,
+  avatar: Avatar,
+  chat: ChatBubbleOutlineIcon,
+  repeat: RepeatIcon,
+  like: FavoriteBorderIcon,
+  publish: PublishIcon,
 };
 
 export default icons;
