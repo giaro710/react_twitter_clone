@@ -1,14 +1,13 @@
 import "./App.css";
 import Sidebar from "./components/Sidebar";
+import Feed from "./components/Feed";
 
 const App = () => {
   return (
     <div className="app">
-      <h1>Twitter Clone</h1>
-
       <Sidebar />
 
-      {/* Feed */}
+      <Feed />
 
       {/* Widgets */}
     </div>

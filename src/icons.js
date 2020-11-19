@@ -13,10 +13,10 @@ const icons = {
   home: HomeIcon,
   search: SearchIcon,
   notifications: NotificationsNoneIcon,
-  mail: MailOutlineIcon,
+  message: MailOutlineIcon,
   bookmark: BookmarkBorderIcon,
   list: ListAltIcon,
-  identity: PermIdentityIcon,
+  profile: PermIdentityIcon,
   more: MoreHorizIcon,
 };
 

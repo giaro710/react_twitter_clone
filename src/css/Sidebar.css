@@ -1,16 +1,35 @@
-/* .sidebar {
-  text-align: center;
-} */
-
-.sidebar__twitter-icon:hover {
-  background: #142e43;
-  border-radius: 50%;
+.sidebar {
+  /* text-align: center; */
+  border-right: 1px solid var(--twitter-background);
+  flex: 0.3;
+  min-width: 250px;
+  margin-top: 20px;
+  padding: 0 20px;
+  height: 100vh;
 }
 
-.sidebar__tweet {
+.sidebar__twitter-icon {
+  color: var(--twitter-color);
+  font-size: 30px !important;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+/* .sidebar__twitter-icon:hover {
+  background: #142e43;
+  border-radius: 50%;
+} */
+
+.sidebar__tweet-btn {
   background: var(--twitter-color) !important;
   border: none !important;
   color: #fff !important;
   font-weight: 900 !important;
   text-transform: inherit !important;
+  border-radius: 30px !important;
+  transition: background 20ms;
+}
+
+.sidebar__tweet-btn:hover {
+  background: #2891da !important;
 }
