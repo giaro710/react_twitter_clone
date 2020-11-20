@@ -1,7 +1,10 @@
 .feed {
-  flex: 0.4;
+  /* flex: 0.4; */
+  max-width: 45%;
+
   border-right: 1px solid var(--twitter-background);
-  min-width: fit-content;
+  border-left: 1px solid var(--twitter-background);
+  /* min-width: fit-content; */
   overflow-y: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -16,8 +19,8 @@
   top: 0;
   background-color: #fff;
   z-index: 100;
-  border: 1px solid var(--twitter-background);
-  padding: 15px 20px;
+  border-bottom: 1px solid var(--twitter-background);
+  padding: 25px 20px 15px 20px;
 }
 
 .feed__header--title {

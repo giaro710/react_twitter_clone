@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../css/Tweetbox.css";
 import { Avatar, Button } from "@material-ui/core";
 import db from "../firebase";
+import icons from "../icons";
 
 const Tweetbox = () => {
   const [tweetMessage, setTweetMessage] = useState("");
@@ -43,9 +44,12 @@ const Tweetbox = () => {
           placeholder="Enter an image url"
           className="tweetbox__input--image"
         />
-        <Button onClick={sendTweet} className="tweetbox__tweet-btn">
+        <icons.button
+          onClick={(e) => sendTweet(e)}
+          className="tweetbox__tweet-btn"
+        >
           Tweet
-        </Button>
+        </icons.button>
       </form>
     </div>
   );
