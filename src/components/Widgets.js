@@ -22,17 +22,14 @@ const Widgets = () => {
       <div className="widgets__container">
         <h2>What's happening</h2>
 
-        <TwitterTweetEmbed tweetId={"858551177860055040"} />
+        <TwitterTweetEmbed tweetId={"5637652"} />
         <TwitterTimelineEmbed
           sourceType="profile"
-          screenName="cleverqazi"
+          screenName="codinghorror"
           options={{ height: "400" }}
         />
 
-        <TwitterShareButton
-          url={"https://www.facebook.com/profile.php?id=100009346730690"}
-          options={{ text: "I love react", via: "Gian Marco Romani" }}
-        />
+        <TwitterShareButton url={"#"} />
       </div>
     </div>
   );

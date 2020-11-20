@@ -4,6 +4,7 @@ import Tweetbox from "./Tweetbox";
 import Post from "./Post";
 import db from "../firebase";
 import { PostAddTwoTone } from "@material-ui/icons";
+import FlipMove from "react-flip-move";
 
 function Feed() {
   const [posts, setPosts] = useState([]);
@@ -12,12 +13,14 @@ function Feed() {
     db.collection("posts").onSnapshot((snapshot) =>
       setPosts(snapshot.docs.map((doc) => doc.data()))
     );
+    console.log(posts);
   }, []);
 
   const renderPosts = () => {
     return posts.map((post) => {
       return (
         <Post
+          key={post.text}
           displayName={post.displayName}
           username={post.username}
           verified={post.verified}
@@ -36,8 +39,7 @@ function Feed() {
       </div>
 
       <Tweetbox />
-
-      {renderPosts()}
+      <FlipMove>{renderPosts()}</FlipMove>
     </div>
   );
 }
