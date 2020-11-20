@@ -4,7 +4,7 @@ import icons from "../icons";
 
 const Post = ({
   displayName,
-  userName,
+  username,
   verified,
   timestamp,
   text,
@@ -14,26 +14,23 @@ const Post = ({
   return (
     <div className="post">
       <div className="post__avatar">
-        <icons.avatar src="https://images.unsplash.com/photo-1468011749792-10026eb12caf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" />
+        <icons.avatar src={avatar} />
       </div>
       <div className="post__body">
         <div className="post__header">
           <div className="post__headerText">
             <h3>
-              Simone Glück <icons.verified className="post__badge" />
-              <span className="post__header--username">@glück_für_alles</span>
+              {displayName}{" "}
+              {verified && <icons.verified className="post__badge" />}
+              <span className="post__header--username">@{username}</span>
             </h3>
           </div>
 
           <div className="post__headerDescription">
-            <p>Build a Twitter clone with love</p>
+            <p>{text}</p>
           </div>
         </div>
-        <img
-          src="https://tiragraffi.it/wp-content/uploads/2016/02/Taco_Party_2.gif"
-          alt="post image"
-          className="post__body--image"
-        />
+        <img src={image} alt="post image" className="post__body--image" />
         <div className="post__footer">
           <icons.chat fontSize="small" />
           <icons.repeat fontSize="small" />
