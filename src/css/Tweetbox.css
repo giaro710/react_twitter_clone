@@ -34,8 +34,9 @@
   background: var(--twitter-color) !important;
   border: none !important;
   color: #fff !important;
-  font-weight: 900 !important;
+  font-weight: 800 !important;
   text-transform: inherit !important;
+  padding: 10px 24px !important;
   border-radius: 30px !important;
   transition: background 20ms;
   margin-left: auto !important;

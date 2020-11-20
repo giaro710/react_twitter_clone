@@ -1,7 +1,7 @@
 .post {
   display: flex;
   align-items: flex-start;
-  border: 1px solid var(--twitter-background);
+  border-bottom: 1px solid var(--twitter-background);
   padding-bottom: 10px;
 }
 
@@ -11,14 +11,24 @@
 }
 
 .post__body--image {
+  width: 480px;
+  height: 292px;
   border-radius: 20px;
+  margin-right: 10px;
 }
 
 .post__footer {
+  width: 460px;
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+  margin-left: 10px;
   cursor: pointer;
+  transition: color 10ms ease-out;
+}
+
+.post__footer--icon:hover {
+  color: var(--twitter-color);
 }
 
 .post__headerText {

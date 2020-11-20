@@ -30,10 +30,10 @@ const Post = forwardRef(
             <img src={image} alt="post image" className="post__body--image" />
           )}
           <div className="post__footer">
-            <icons.chat fontSize="small" />
-            <icons.repeat fontSize="small" />
-            <icons.like fontSize="small" />
-            <icons.publish fontSize="small" />
+            <icons.chat fontSize="small" className="post__footer--icon" />
+            <icons.repeat fontSize="small" className="post__footer--icon" />
+            <icons.like fontSize="small" className="post__footer--icon" />
+            <icons.publish fontSize="small" className="post__footer--icon" />
           </div>
         </div>
       </div>

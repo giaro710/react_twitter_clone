@@ -13,7 +13,7 @@ import RepeatIcon from "@material-ui/icons/Repeat";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import PublishIcon from "@material-ui/icons/Publish";
 
-import { Avatar } from "@material-ui/core";
+import { Avatar, Button } from "@material-ui/core";
 
 const icons = {
   twitter: TwitterIcon,
@@ -31,6 +31,7 @@ const icons = {
   repeat: RepeatIcon,
   like: FavoriteBorderIcon,
   publish: PublishIcon,
+  button: Button,
 };
 
 export default icons;

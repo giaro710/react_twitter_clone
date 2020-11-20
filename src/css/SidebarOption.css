@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   cursor: pointer;
-  /* margin: 0 20px; */
+  /* width: 100%; */
 }
 
 .sidebarOption:hover {

@@ -1,10 +1,7 @@
 import React from "react";
-
 import SidebarOption from "./SidebarOption";
-
 import "../css/Sidebar.css";
 import icons from "../icons";
-import { Button } from "@material-ui/core";
 
 const Sidebar = () => {
   return (
@@ -21,9 +18,7 @@ const Sidebar = () => {
         <SidebarOption Icon={icons.profile} text="Profile" />
         <SidebarOption Icon={icons.more} text="More" />
 
-        <Button variant="outlined" className="sidebar__tweet-btn" fullWidth>
-          Tweet
-        </Button>
+        <button className="sidebar__button">Tweet</button>
       </div>
     </div>
   );

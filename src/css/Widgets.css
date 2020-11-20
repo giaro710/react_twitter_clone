@@ -1,5 +1,6 @@
 .widgets {
-  flex: 0.3;
+  /* flex: 0.3; */
+  max-width: 30%;
 }
 
 .widgets__input-container {
@@ -8,7 +9,7 @@
   background: var(--twitter-background);
   padding: 10px;
   border-radius: 20px;
-  margin-top: 10px;
+  margin-top: 12px;
   margin-left: 20px;
 }
 
@@ -33,4 +34,8 @@
 .widgets__container > h2 {
   font-size: 18px;
   font-weight: 800;
+}
+
+.widgets__share-btn {
+  margin-top: 60px;
 }
