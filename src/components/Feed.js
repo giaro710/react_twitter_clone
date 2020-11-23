@@ -3,7 +3,6 @@ import "../css/Feed.css";
 import Tweetbox from "./Tweetbox";
 import Post from "./Post";
 import db from "../firebase";
-import { PostAddTwoTone } from "@material-ui/icons";
 import FlipMove from "react-flip-move";
 
 function Feed() {
